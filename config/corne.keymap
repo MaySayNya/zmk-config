@@ -68,7 +68,7 @@
             //                    |     |     |     |   |     |     |     |
 
             bindings = <
-&trans  &kp EXCL      &kp AT     &kp HASH           &kp DLLR          &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTERISK   &kp LPAR          &kp RPAR           &trans
+&trans  &kp EXCL      &kp AT     &kp HASH           &kp DLLR          &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTERISK   &kp LPAR          &kp RPAR           &kp DELETE
 &trans  &kp QUESTION  &kp COLON  &kp LESS_THAN      &kp GREATER_THAN  &trans       &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
 &trans  &kp SQT       &kp GRAVE  &kp DOUBLE_QUOTES  &kp TILDE         &trans       &kp UNDER  &kp PLUS   &kp PIPE       &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
                                  &trans             &trans            &trans       &trans     &trans     &trans
