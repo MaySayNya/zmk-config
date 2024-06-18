@@ -13,8 +13,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <2 3>;
-            then-layer = <4>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 
@@ -32,16 +32,7 @@
 &kp ESC           &kp Q  &kp W  &kp E          &kp R  &kp T        &kp Y          &kp U  &kp I         &kp O    &kp P     &kp DELETE
 &kp LEFT_CONTROL  &kp A  &kp S  &kp D          &kp F  &kp G        &kp H          &kp J  &kp K         &kp L    &kp SEMI  &kp TAB
 &kp LEFT_SHIFT    &kp Z  &kp X  &kp C          &kp V  &kp B        &kp N          &kp M  &kp COMMA     &kp DOT  &kp FSLH  &kp RET
-                                &kp LEFT_META  &sl 2  &kp SPACE    &kp BACKSPACE  &sl 3  &kp LEFT_ALT
-            >;
-        };
-
-        ctrl_meta_swap {
-            bindings = <
-&trans         &trans  &trans  &trans            &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_META  &trans  &trans  &trans            &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans         &trans  &trans  &trans            &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                               &kp LEFT_CONTROL  &trans  &trans    &trans  &trans  &trans
+                                &kp LEFT_META  &sl 1  &kp SPACE    &kp BACKSPACE  &sl 2  &kp LEFT_ALT
             >;
         };
 
@@ -83,10 +74,10 @@
             //                    |     |     |     |   |     |     |     |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4     &tog 1  &trans  &trans  &trans  &trans  &kp C_PWR
-&trans      &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &trans  &trans  &trans  &trans  &trans  &kp K_SLEEP
-&trans      &trans         &trans         &trans         &trans         &trans           &trans  &trans  &trans  &trans  &trans  &kp K_LOCK
-                                          &trans         &trans         &trans           &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4     &soft_off  &trans  &trans  &trans  &trans  &kp C_PWR
+&trans      &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &trans     &trans  &trans  &trans  &trans  &kp K_SLEEP
+&trans      &trans         &trans         &trans         &trans         &trans           &trans     &trans  &trans  &trans  &trans  &kp K_LOCK
+                                          &trans         &trans         &soft_off        &trans     &trans  &trans
             >;
         };
     };
